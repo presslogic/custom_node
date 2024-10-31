@@ -63,7 +63,7 @@ class audio_save_path:
     RETURN_TYPES = ()
     OUTPUT_NODE = True
     CATEGORY = "medialens"
-    FUNCTION = "image_save_path"
+    FUNCTION = "audio_save_path"
     def audio_save_path(self, audios, filename, folder):
         output_path = os.path.join(self.output_dir, folder)
         os.makedirs(output_path, exist_ok=True)
