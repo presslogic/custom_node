@@ -24,7 +24,7 @@ class image_save_path:
     OUTPUT_NODE = True
     CATEGORY = "medialens"
     FUNCTION = "image_save_path"
-    def save_images(self, images, filename, folder):
+    def image_save_path(self, images, filename, folder):
         output_path = os.path.join(self.output_dir, folder)
         os.makedirs(output_path, exist_ok=True)
         # pil_images: List[Image.Image] = []
